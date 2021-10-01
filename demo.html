@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+
+    <style>
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+
+        body {
+            text-align: center;
+        }
+
+        #weather-card {
+            width: 400px;
+            height: 200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 10px;
+            /* border: 1px solid black; */
+            border-radius: 20px;
+            background-color: #1A1C49;
+        }
+
+        .date-text {
+            color: white;
+        }
+
+        .temp-cont {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="weather-card">
+
+    </div>
+    <button onclick="currentApi('Kuala Lumpur')">Kuala Lumpur</button>
+    <button onclick="currentApi('Pulau Pinang')">Penang</button>
+    <button onclick="currentApi('Johor')">Johor</button>
+    <button onclick="currentApi('Sabah')">Sabah</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="weather.js"></script>
+</body>
+</html>
